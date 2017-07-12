@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>三列式布局</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #container{
+            margin: 5px 0;
+        }
+        #header,#footer{
+            width: 100%;
+            height: 100px;
+            background: #ccc;
+        }
+        .subMainBox{
+            float: left;
+            width: 200px;
+            background: #af3;
+            margin-right: -200px;
+        }
+        .mainBox{
+            float: left;
+            background: #3af;
+            width: auto;
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+        .sideBox{
+            float: right;
+            width: 200px;
+            background: #ff3;
+            margin-left: -200px;
+        }
+        #container:after{
+            display: block;
+            visibility: hidden;
+            content: "";
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+<div id="header">头部信息</div>
+<div id="container">
+    <div class="subMainBox">次要内容区域次要内容区域次要内容区域次要内容区域次要内容区
+        域次要内容区域次要内容区域次要内容区域次要内容区域次要内容区域次要内容区域
+    </div>
+    <div class="mainBox">主要内容区域主要内容区域主要内容区域主要内容区域主要内容区域
+        主要内容区域主要内容区域主要内容区域主要内容区域主要内容区域主要内容区域主
+        要内容区域<br>
+        主要内容区域主要内容区域主要内容区域<br>
+        主要内容区域主要内容区域主要内容区域<br>
+        主要内容区域主要内容区域主要内容区域<br>
+        主要内容区域主要内容区域主要内容区域<br>
+        主要内容区域主要内容区域主要内容区域<br>
+        主要内容区域主要内容区域主要内容区域<br>
+        主要内容区域主要内容区域主要内容区域<br>
+        主要内容区域主要内容区域主要内容区域<br>
+    </div>
+
+    <div class="sideBox">侧边栏侧边栏侧边栏侧边栏侧边栏侧边栏侧边栏侧边栏侧边栏侧边栏侧边栏侧边栏
+        侧边栏侧边栏侧边栏侧边栏侧边栏侧边栏侧边栏侧边栏侧边栏</div>
+</div>
+<div id="footer">底部信息</div>
+</body>
+</html>

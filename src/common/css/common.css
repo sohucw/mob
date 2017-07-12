@@ -1,0 +1,17 @@
+@import "flex.css";
+
+html, body {
+    padding: 0;
+    margin: 0;
+    background-color: #ffcccc;
+}
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+}
+
+ul {
+    background: url("../imgs/logo.jpg");
+}

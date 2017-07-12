@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>在多列布局中使用BFC</title>
+    <style>
+        .column {
+            width: 31.33%;
+            background-color: green;
+            float: left;
+            margin: 0 1%;
+        }
+
+        .column:last-child {
+            float: none;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<h2>在多列布局中使用BFC</h2>
+<hr/>
+
+
+<div class="container">
+    <div class="column">column 1</div>
+    <div class="column">column 2</div>
+    <div class="column">column 3</div>
+</div>
+
+<script>
+
+    /*    /!* 1 *!/
+     const sleep = (timeountMS) => new Promise((resolve) => {
+     setTimeout(resolve, timeountMS);
+     });
+
+     /!* 2 *!/
+     function sleep (timeountMS) {
+     return new Promise(function(resolve) {
+     setTimeout(resolve, timeountMS);
+     });
+     }*/
+
+</script>
+</body>
+</html>

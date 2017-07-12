@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文字环绕</title>
+    <style>
+        .container {
+
+        }
+        .floated {
+            float: left;
+            width: 120px;
+            height: 120px;
+
+        }
+        p {
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<h2>使用BFC来防止文字环绕</h2>
+<hr/>
+
+
+<div class="container">
+    <div class="floated">Floated div</div>
+    <p>Quae hic ut ab pPellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae hic ut ab perferendis sit quod architecto, dolor debitis quam rem provident aspernatur tempora expedita perspiciatis suscipit ipsam voluptas tenetur. Nostrum? Quae hic ut ab perferendis sit quod architecto. Quae hic ut ab perferendis sit quod architecto.erferendis sit quod architecto,dolor debitis quam rem provident aspernatur tempora expedita.</p>
+</div>
+
+</body>
+</html>
